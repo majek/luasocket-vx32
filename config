@@ -5,11 +5,11 @@
 #------
 # Output file names
 #
-EXT=so
+EXT=a
 SOCKET_V=2.0.2
 MIME_V=1.0.2
-SOCKET_SO=socket.$(EXT).$(SOCKET_V) 
-MIME_SO=mime.$(EXT).$(MIME_V)
+SOCKET_SO=socket.$(EXT)
+MIME_SO=mime.$(EXT)
 UNIX_SO=unix.$(EXT)
 
 #------
@@ -51,8 +51,8 @@ INSTALL_EXEC=cp
 # for Linux
 CC=gcc
 DEF=-DLUASOCKET_DEBUG 
-CFLAGS= $(LUAINC) $(DEF) -pedantic -Wall -O2 -fpic
-LDFLAGS=-O -shared -fpic
+CFLAGS= $(LUAINC) $(DEF) -pedantic -Wall -O2
+LDFLAGS=
 LD=gcc 
 
 #------
